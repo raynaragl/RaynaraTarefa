@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title> - Moranguinho</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <style>
+      html, body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+      }
+      main {
+        flex: 1;
+      }
+      footer {
+        background-color: hsl(330, 17%, 98%);
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+      }
+      footer p {
+        margin: 0;
+        color: #6c757d;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navbar com marca e links -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger p-3">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="../img/image.png" alt="Logo" width="40" height="30">
+              Moranguinho
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="produtos.html">Produtos</a> <!-- Link para a página de produtos -->
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Opções
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="contatos.html">Contatos</a></li> <!-- Corrigido link para a página de Contatos -->
+                    <li><a class="dropdown-item" href="#">Em breve</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Em breve</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- Formulário de busca -->
+              <form class="d-flex" role="search" action="buscar.php" method="get">
+                <input class="form-control me-2" type="search" name="query" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+        
+    <main>
+       <!-- Conteúdo principal -->
+       <div class="container mt-4">
+         <h1>Bem-vindo ao site da Moranguinho!</h1>
+         <p>Descubra nossos produtos fresquinhos e deliciosos. Aqui você encontra morangos selecionados com o maior cuidado!</p>
+         <!-- Você pode adicionar produtos ou outros detalhes importantes aqui -->
+       </div>
+    </main>    
+    
+    <footer class="text-muted">
+      <div class="container">
+        <p class="mb-0">&copy; 2025 Raynara - Todos os direitos reservados</p>
+      </div>
+    </footer>
+    
+    <!-- Importando o JS do Bootstrap e dependências -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
